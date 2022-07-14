@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(108, 8, 28);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+/*Main index*/
+.main_index{
+    display: flex;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+/*Menu nav*/
+
+.nav {
+    width: 300px;
+}
+
+.nav__link {
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover {
+    background: #F6F8FA;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: rgb(159, 156, 123);
+}
+
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 2px 2px;
+    font-size: 17px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: black;
+}
+
+.search-bar button img {
+    width: 25px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+
+/*Card*/
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card{
+    position: relative;
+    width: 280px;
+    height: 160px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    height: 450px;
+}
+
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx{
+    width: 250px;
+    height: 330px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   overflow: hidden;
+}
+.card .content .details{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+
+.card .content .details .cardname{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em ;
+}
+
+.card .content .details .cardname .autor{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .data{
+ display: flex;
+ justify-content: space-between;
+ margin: 0.7px 0;
+}
+
+.card .content .details .data .date{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details .data .date span{
+    font-size: 0.6em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+
+.card .content .details .data .format{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details .data .format span{
+    font-size: 0.6em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.card .content .details .data .price{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details .data .price span{
+    font-size: 0.6em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+
+.card .content .details .actionBtn {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.card .content .details .actionBtn .buttonCTA {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.6em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.card .content .details .actionBtn .info {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.6em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.card .content .details .actionBtn .info a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.card .content .details .actionBtn .buttonCTA .info:nth-child(2){
+    border: 1px solid #999;
+    color: #999;
+    background: #fff;
+}
+
+    
+
+/* carrito */
+
+
+.main_carrito{
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+    
+}
+
+.cartBox{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.botonesDecompra{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.button_buy{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+/* CART */
+
+.cartContainer {
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.cartRow {
+    border: 1px solid gray;
+    width: 70%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartHeader {
+    margin-top: 50px;
+    font-size: 20px;
+    border: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cartImg {
+    width: 15%;
+}
+
+.cartImg img {
+    width: 100%;
+}
+
+.cartTitle {
+    width: 35%;
+}
+
+.cartDesc {
+    width: 25%;
+}
+
+.cartPrice {
+    width: 25%;
+}
+
+
+/* FORM */
+ 
+/* .formContainer {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.formContainer form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+}
+
+.formContainer input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.formContainer input[type=submit] {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgb(89, 168, 89);
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .team { */
+    /* height: 90%;
+    min-width: 165px;
+    width: 100%;
+    margin-right: 3%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(193, 193, 193);
+    border-radius: 10px;
+}
+
+.teamTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.teamContainer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.teamCTA {
+    width: 40%;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.teamCTA:hover {
+    background-color: black;
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- <div id="BookBerserk" class="card">
+                <div class="imgBx">
+                    <img src="./assets/images/Berserk2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="details">
+                        <h2 class="cardname">Berserk2<br><span class="autor">Kentaro Minura</span></h2>
+                        <div class="data">
+                            <h3 class="date"> 21 Dec 2004<br><span>Fecha de publicación</span></h3>
+                            <h3 class="format">Paperback<br><span>Formato</span></h3>
+                            <h3 class="price">$2.282<br><span>Precio</span></h3>
+                        </div>
+                        <div class="actionBtn">
+                            <button class="cardCTA">Añadir al carrito</button>
+                            <button class="info"><a href="https://www.bookdepository.com/es/Berserk-Volume-2/9781593070212"> Más info</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div> --> */
