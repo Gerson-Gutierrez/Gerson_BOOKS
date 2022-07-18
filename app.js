@@ -57,102 +57,68 @@ botonesCompra.forEach((botonCompra) => {
 })
 
 
-// --------------------------------------------------------------------------
+
  
+
+
+
+
+
+
+
+
 //carrito
 
 
+// const searchBar = document.querySelector('#searchBar')
+// const searchButton = document.querySelector('#searchButton')
 
+// const searchBarProducto = (e) => {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-// const LibrosListContainer = document.querySelector('.cardContainer')
-
-
-// //Funciones
-
-// const renderizarListaDeLibros = () => {
-//   productos.forEach((producto) => {
-//       const BookButton = document.createElement('button')
-//       BookButton.className = 'cardCTA'
-//       BookButton.innerHTML = `
-//           <div class="imgBx">
-//              <img src="${producto.img}" alt="">
-//              <span class= "cardID">${producto}</span>
-//           </div>
-//         <div class="content">
-//           <div class="details">
-//                 <h2 class="cardname">${producto.name}<br><span class="autor">${producto.autor}</span></h2>
-//                <div class="data">
-//                      <h3 class="date">${producto.date}<br><span>Fecha de publicación</span></h3>
-//                      <h3 class="format">${producto.format}<br><span>Formato</span></h3>
-//                      <h3 class="price">$${producto.price}<br><span>Precio</span></h3>
-//                </div>
-//                <div class="actionBtn">
-//                    <button class="cardCTA">Añadir al carrito</button>
-//                    <button class="info"><a href="${producto.url}"> Más info</a></button>
-//                </div>
-//           </div>
-//         </div>
-
-//      `
-    
-//      LibrosListContainer.append(BookButton)
-
-//     })
-    
 // }
 
-// // Ejecuciones
+// searchButton.addEventListener('click', searchBarProducto)
 
-// renderizarListaDeLibros()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

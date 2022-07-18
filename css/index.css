@@ -9,7 +9,111 @@
 body {
     background: rgb(108, 8, 28);
     font-family: 'Poppins', sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1605296862588-2858174c3e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 100px 150px rgba(0, 0, 0, 0);
+    background-size: cover;
 }
+
+.encabezado {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulop {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    animation: azul-neon 2s infinite alternate;
+
+}
+
+@keyframes azul-neon {
+
+    0%,
+    10%,
+    15%,
+    20%,
+    30%,
+    35%,
+    40%,
+    50%,
+    55%,
+    60%,
+    70%,
+    75%,
+    80%,
+    85%,
+    90%,
+    100% {
+           text-shadow: 9px 9px 18px #3485ff,
+            3px 3px 5px #00246c,
+            -3px -3px 5px #00246c,
+            -9px -9px 27px #3485ff;            
+
+    }
+
+    10% ,
+    15% ,
+    60% {
+      
+      text-shadow: none; }
+               
+
+}
+
+
+.parrafo{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    animation: naranja-neon 2s infinite alternate;
+
+}
+
+
+@keyframes naranja-neon {
+
+    0%,
+    10%,
+    15%,
+    20%,
+    30%,
+    35%,
+    40%,
+    50%,
+    55%,
+    60%,
+    70%,
+    75%,
+    80%,
+    85%,
+    90%,
+    100% {
+           text-shadow: 0 -1px 4px #fff,
+                        0 -2px 10px #ff0,
+                        0 -10px 20px #ff8000;            
+
+    }
+
+    10% ,
+    15% ,
+    60% {
+      
+      text-shadow: none; }
+               
+
+}
+
+
+
+
+
+
 
 
 
@@ -17,23 +121,18 @@ body {
 
 
 /*Main index*/
-.main_index{
+.main_index {
     display: flex;
     width: 100%;
-    
+
 }
-
-
-
-
-
-
 
 
 /*Menu nav*/
 
 .nav {
     width: 300px;
+    
 }
 
 .nav__link {
@@ -55,7 +154,7 @@ body {
 
 .list {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -101,11 +200,14 @@ body {
 }
 
 
+/* barra de busqueda  */
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 .search-bar {
     width: 100%;
@@ -147,31 +249,33 @@ body {
 
 
 /*Card*/
-.cardContainer{
+.cardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     width: 100%;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 85px;
+    height: 1200px;
 }
-.card{
+
+.card {
     position: relative;
     width: 280px;
     height: 160px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 
 }
 
-.card:hover{
+.card:hover {
     height: 450px;
 }
 
-.imgBx{
+.imgBx {
     position: absolute;
     left: 50%;
     top: -50px;
@@ -180,17 +284,17 @@ body {
     height: 190px;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
     overflow: hidden;
     transition: 0.5s;
 }
 
-.card:hover .imgBx{
+.card:hover .imgBx {
     width: 250px;
     height: 330px;
 }
 
-.imgBx img{
+.imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -199,16 +303,17 @@ body {
     object-fit: cover;
 }
 
-.card .content{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
-   overflow: hidden;
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
 }
-.card .content .details{
+
+.card .content .details {
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -216,64 +321,64 @@ body {
     transform: translateY(150px);
 }
 
-.card:hover .content .details{
+.card:hover .content .details {
     transform: translateY(0px);
 }
 
-.card .content .details .cardname{
+.card .content .details .cardname {
     font-size: 1.25em;
     font-weight: 600;
     color: #555;
-    line-height: 1.2em ;
+    line-height: 1.2em;
 }
 
-.card .content .details .cardname .autor{
+.card .content .details .cardname .autor {
     font-size: 0.75em;
     font-weight: 500;
     opacity: 0.5;
 }
 
-.card .content .details .data{
- display: flex;
- justify-content: space-between;
- margin: 0.7px 0;
+.card .content .details .data {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7px 0;
 }
 
-.card .content .details .data .date{
+.card .content .details .data .date {
     font-size: 1em;
     color: #555;
     line-height: 1.2em;
     font-weight: 600;
 }
 
-.card .content .details .data .date span{
+.card .content .details .data .date span {
     font-size: 0.6em;
     font-weight: 400;
     opacity: 0.5;
 }
 
 
-.card .content .details .data .format{
+.card .content .details .data .format {
     font-size: 1em;
     color: #555;
     line-height: 1.2em;
     font-weight: 600;
 }
 
-.card .content .details .data .format span{
+.card .content .details .data .format span {
     font-size: 0.6em;
     font-weight: 400;
     opacity: 0.5;
 }
 
-.card .content .details .data .price{
+.card .content .details .data .price {
     font-size: 1em;
     color: #555;
     line-height: 1.2em;
     font-weight: 600;
 }
 
-.card .content .details .data .price span{
+.card .content .details .data .price span {
     font-size: 0.6em;
     font-weight: 400;
     opacity: 0.5;
@@ -319,41 +424,41 @@ body {
 
 
 
-.card .content .details .actionBtn .buttonCTA .info:nth-child(2){
+.card .content .details .actionBtn .buttonCTA .info:nth-child(2) {
     border: 1px solid #999;
     color: #999;
     background: #fff;
 }
 
-    
+
 
 /* carrito */
 
 
-.main_carrito{
+.main_carrito {
     display: flex;
     width: 100%;
     /* height: 100%; */
-    
+
 }
 
-.cartBox{
- width: 100%;
- display: flex;
- flex-direction: column;
+.cartBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.botonesDecompra{
+.botonesDecompra {
     display: flex;
     gap: 50px;
     justify-content: center;
-    
+
 }
 
-.button_buy{
+.button_buy {
     display: flex;
     justify-content: center;
-    
+
 }
 
 
@@ -408,37 +513,90 @@ body {
 }
 
 
-/* FORM */
- 
-/* .formContainer {
+
+/* Boton de Vaciar Carrito*/
+
+/* .vaciarCarrito{
+   position: relative;
+   display: inline-block;
+   padding: 15px 30px;
+   color: #fff;
+   letter-spacing: 4px;
+   font-size: 13px;
+   text-decoration: none;
+   overflow: hidden;
+   transition: 0.2s;
+
+}
+
+.vaciarCarrito:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 080px #a945c7;
+    transition-delay: 1s;
+}
+
+.vaciarCarrito span{
+    position: absolute;
+    display: block;
+}
+
+.span1{
+    top: 0;
+    left: -100%;
     width: 100%;
-    padding: 20px 0;
-    margin-top: 30px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid gray;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
 }
 
-.formContainer form {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 30%;
+.vaciarCarrito:hover .span1{
+    left: 100%;
+    transition: 1s;
 }
 
-.formContainer input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid gray;
-    border-radius: 10px;
+
+.span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#a945c7);
 }
 
-.formContainer input[type=submit] {
-    font-size: 14px;
-    font-weight: 600;
-    background-color: rgb(89, 168, 89);
-    color: white;
+.vaciarCarrito:hover .span2{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+
+.vaciarCarrito:hover .span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+.span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#a945c7);
+}
+
+.vaciarCarrito:hover .span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
 } */
 
 
@@ -464,12 +622,8 @@ body {
 
 
 
-
-
-
-
 /* .team { */
-    /* height: 90%;
+/* height: 90%;
     min-width: 165px;
     width: 100%;
     margin-right: 3%;

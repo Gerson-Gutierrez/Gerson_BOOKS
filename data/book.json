@@ -1,0 +1,210 @@
+{
+    "data": [
+        {
+           "name":"Berserk2",
+           "autor":"Kentaro Minura",
+           "date":"21 Dec 2004",
+           "format":"Paperback",
+           "price":"2.282",
+           "img":"./assets/images/Berserk2.jpg",
+           "url":"https://www.bookdepository.com/es/Berserk-Volume-2/9781593070212",
+           "id":"001"              
+        },
+
+        {
+            "name":"Berserk1",
+            "autor":"Kentaro Minura",
+            "date":"17 Mar 2009",
+            "format":"Paperback",
+            "price":"2.447",
+            "img":"./assets/images/Berserk1.jpg",
+            "url":"https://www.bookdepository.com/es/Berserk-Volume-1/9781593070205",
+            "id":"002"  
+
+
+        },
+
+
+        {
+            "name":"Berserk3",
+            "autor":"Kentaro Minura",
+            "date":"21 Dec 2004",
+            "format":"Paperback",
+            "price":"2.330",
+            "img":"./assets/images/Berserk3.jpg",
+            "url":"https://www.bookdepository.com/es/Berserk-3-Kentaro-Miura/9781593070229?ref=grid-view&qid=1657594859574&sr=1-2",
+            "id":"003"        
+        },
+
+
+        {
+            "name":"Berserk4",
+            "autor":"Kentaro Minura",
+            "date":"27 Jul 2004",
+            "format":"Paperback",
+            "price":"2.292",
+            "img":"./assets/images/Berserk4.jpg",
+            "url":"https://www.bookdepository.com/es/Berserk-4-Kentaro-Miura/9781593072032?ref=grid-view&qid=1657595364138&sr=1-2",
+            "id":"004"        
+        },
+
+
+        {
+            "name":"The Hobbit",
+            "autor":"J.R.R Tolkien",
+            "date":"22 Oct 2013",
+            "format":"Hardback",
+            "price":"5.887",
+            "img":"./assets/images/Hobbit.jpg",
+            "url":"https://www.bookdepository.com/es/Hobbit-J-R-R-Tolkien/9780007497904?ref=grid-view&qid=1657595804560&sr=1-19",
+            "id":"005"        
+        },
+
+
+        {
+            "name":"El señor De Los Anillos",
+            "autor":"J.R.R Tolkien",
+            "date":"08 Oct 2019",
+            "format":"Hardback",
+            "price":"13.463",
+            "img":"./assets/images/Elseñor.jpg",
+            "url":"https://www.bookdepository.com/es/El-se%C3%B1or-de-los-anillos-J-R-R-Tolkien/9788445007709?ref=grid-view&qid=1657596625008&sr=1-2",
+            "id":"006"        
+        },
+
+
+        {
+            "name":"Matilda",
+            "autor":"Roald Dahl",
+            "date":"16 Aug 2007",
+            "format":"Paperback",
+            "price":"1.863",
+            "img":"./assets/images/matilda.jpg",
+            "url":"https://www.bookdepository.com/es/Matilda-Roald-Dahl/9780142410370?ref=grid-view&qid=1657597283753&sr=1-1",
+            "id":"007"        
+        },
+
+
+        {
+            "name":"The Adventure of Tintin",
+            "autor":"Herge Herge",
+            "date":"30 Sep 1976",
+            "format":"Paperback",
+            "price":"2.634",
+            "img":"./assets/images/tintin.jpg",
+            "url":"https://www.bookdepository.com/es/Adventures-Tintin-Explorers-on-Moon-Herge-Herge/9780316358460?ref=grid-view&qid=1657597761740&sr=1-9",
+            "id":"008"        
+        },
+
+
+        {
+            "name":"Treasure Island",
+            "autor":"Robert Louis Stevenson",
+            "date":"05 May 2016",
+            "format":"Paperback",
+            "price":"1.255",
+            "img":"./assets/images/Treasure.jpg",
+            "url":"https://www.bookdepository.com/es/Treasure-Island-Robert-Louis-Stevenson/9781101990322?ref=grid-view&qid=1657598434902&sr=1-18",
+            "id":"009"        
+        },
+
+
+        {
+            "name":"El Guardian Entre el Centeno",
+            "autor":"J.D.Salinger",
+            "date":"26 Jul 2007",
+            "format":"Paperback",
+            "price":"6.754",
+            "img":"./assets/images/ElGuardian.jpg",
+            "url":"https://www.bookdepository.com/es/GUARDIAN-ENTRE-EL-CENTENO-EL-PD-Salinger-Jerome-David/9788435008952?ref=grid-view&qid=1657598994000&sr=1-3",
+            "id":"010"        
+        },
+
+
+        {
+            "name":"Don Quijote De La Mancha",
+            "autor":"Miguel De Cervantes",
+            "date":"30 Mar 2007",
+            "format":"Hardback",
+            "price":"3.809",
+            "img":"./assets/images/DonQuijote.jpg",
+            "url":"https://www.bookdepository.com/es/Don-Quijote-De-LA-Mancha-Miguel-de-Cervantes/9788467016901?ref=grid-view&qid=1657599592648&sr=1-2",
+            "id":"011"        
+        },
+
+
+        {
+            "name":"La Vuelta Al Mundo en 80 Dias",
+            "autor":"Julio Verne",
+            "date":"01 Jun 2021",
+            "format":"Hardback",
+            "price":"3.526",
+            "img":"./assets/images/LaVuelta.jpg",
+            "url":"https://www.bookdepository.com/es/La-Vuelta-Al-Mundo-En-80-Dias-Julio-Verne/9788417127916?ref=grid-view&qid=1657600482046&sr=1-6",
+            "id":"012"        
+        },
+
+
+        {
+            "name":"The Jungle Book",
+            "autor":"Rudyard Kipling",
+            "date":"07 Apr 2016",
+            "format":"Hardback",
+            "price":"4.928",
+            "img":"./assets/images/TheJungle.jpg",
+            "url":"https://www.bookdepository.com/es/Jungle-Book-MinaLima-Edition-Illustrated-with-Interactive-Elements-Rudyard-Kipling/9780062389503?ref=grid-view&qid=1657600951224&sr=1-8",
+            "id":"013"        
+        },
+
+
+        {
+            "name":"El Progreso del Peregrino",
+            "autor":"John Bunyan",
+            "date":"13 Oct 2020",
+            "format":"Hardback",
+            "price":"4.735",
+            "img":"./assets/images/ElPeregrino.jpg",
+            "url":"https://www.bookdepository.com/es/El-progreso-del-peregrino-John-Bunyan/9781400220311?ref=grid-view&qid=1657601472223&sr=1-1",
+            "id":"014"        
+        },
+
+
+        {
+            "name":"El Burrito que cargo a un Rey",
+            "autor":"R.C.Sproul",
+            "date":"01 Feb 2021",
+            "format":"Hardback",
+            "price":"2.436",
+            "img":"./assets/images/ElBurrito.jpg",
+            "url":"https://www.bookdepository.com/es/El-burrito-que-cargo-un-Rey-R-C-Sproul/9781087730882?ref=pd_detail_1_sims_b_p2p_1",
+            "id":"015"        
+        }
+
+
+    ]
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
