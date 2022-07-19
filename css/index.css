@@ -472,9 +472,11 @@ body {
     flex-flow: column;
     align-items: center;
     height: 100%;
+    color: #fff;
 }
 
 .cartRow {
+    height: 150px;
     border: 1px solid gray;
     width: 70%;
     padding: 20px 10px;
@@ -483,7 +485,13 @@ body {
     align-items: center;
 }
 
+.cartRow .imagenCarrito{
+    width: 90px;
+}
+
+
 .cartHeader {
+    color: #fff;
     margin-top: 50px;
     font-size: 20px;
     border: none;
@@ -512,6 +520,44 @@ body {
     width: 25%;
 }
 
+.RealizarCompra{
+    padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 1.7em;
+            font-weight: 500;
+            background: #287bff;
+            color: #fff;
+            cursor: pointer;
+}
+
+.RealizarCompra:hover{
+    transition: 0.5s;
+                background-color: #d2b59a;
+
+}
+
+.vaciarCarrito{
+    padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 1.7em;
+            font-weight: 500;
+            background: red;
+            color: #fff;
+            cursor: pointer;
+
+
+}
+
+.vaciarCarrito:hover{
+    transition: 0.5s;
+                background-color: #f37a09;
+
+
+}
 
 
 /* Boton de Vaciar Carrito*/

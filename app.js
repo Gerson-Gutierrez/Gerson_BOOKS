@@ -1,11 +1,17 @@
+let productos
 
-const productos = [Book1, Book2, Book3, Book4, Book5, Book6, Book7, Book8, Book9, Book10, Book11, Book12, Book13, Book14, Book15]
+
+let carrito = JSON.parse(localStorage.getItem('listaDeCarrito')) || []
+
 
 const cardContainer = document.querySelector('#cardContainer')
 
-productos.forEach((producto) => {
-    const card = document.createElement('div')
-    card.className = 'card'
+
+
+const renderizarProductos = () => {
+    productos.forEach((producto) => {
+        const card = document.createElement('div')
+        card.className = 'card'
         card.innerHTML = `
        
              <div class="imgBx">
@@ -28,97 +34,58 @@ productos.forEach((producto) => {
      
         `
 
-    cardContainer.append(card)
+        cardContainer.append(card)
 
-})
-
-
+    })
 
 
+    const botonesCompra = document.querySelectorAll('.buttonCTA')
 
-let carrito = []
+    botonesCompra.forEach((botonCompra) => {
+        botonCompra.addEventListener('click', agregarProducto)
+    })
+
+
+
+    botonesCompra.forEach(btn => btn.addEventListener('click', () =>{
+        Toastify({
+            text: "En Tu Carrito",
+            duration: 3000,
+            destination: "",
+            newWindow: true,
+            close: false,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            className: "toa",
+            onClick: function () {} // Callback after click
+        }).showToast();
+
+
+    }))
+
+}
+
+
+
+const cargarListaProductos = async () => {
+    const res = await fetch('./data/book.json')
+    const {
+        data
+    } = await res.json()
+    productos = data
+    renderizarProductos(productos)
+}
+
+
+
 
 const agregarProducto = (e) => {
     const productoElegido = e.target.getAttribute('data-id')
-    // console.log(productoElegido)
     const producto = productos.find((producto) => producto.id == productoElegido)
     carrito.push(producto)
-     console.log(carrito)
     localStorage.setItem('listaDeCarrito', JSON.stringify(carrito))
 }
 
 
-const botonesCompra = document.querySelectorAll('.buttonCTA')
-
-
-
-botonesCompra.forEach((botonCompra) => {
-    botonCompra.addEventListener('click', agregarProducto)
-})
-
-
-
- 
-
-
-
-
-
-
-
-
-//carrito
-
-
-// const searchBar = document.querySelector('#searchBar')
-// const searchButton = document.querySelector('#searchButton')
-
-// const searchBarProducto = (e) => {
-
-// }
-
-// searchButton.addEventListener('click', searchBarProducto)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+cargarListaProductos()
